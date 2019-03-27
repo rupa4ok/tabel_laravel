@@ -8,5 +8,6 @@ env:
 		cp .env.example .env
 key:
 		php artisan key:generate
+        php artisan config:cache
 lint:
 		composer run-script phpcs -- --standard=PSR12  app routes tests
