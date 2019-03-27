@@ -2,6 +2,7 @@
 
 namespace Tests\Feature;
 
+
 use App\User;
 use Tests\TestCase;
 use Illuminate\Foundation\Testing\WithFaker;
@@ -14,7 +15,7 @@ class PagesTest extends TestCase
     public function testGetHomePage()
     {
         $user = factory(User::class)->create();
-        $response = $this->actingAs($user)->get(route('home'));
+        $response = $this->actingAs($user)->get(route('objects'));
         $response->assertOk();
     }
 }
