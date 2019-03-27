@@ -28,11 +28,10 @@ install:
 - make install
 - make env
 - make key
-- make lint
 
 after_script:
 - vendor/bin/test-reporter
 
 script:
-- make lint test
+- make test
 - if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT; fi
