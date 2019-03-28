@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1553698246">
-  <project timestamp="1553698246">
+<coverage generated="1553762015">
+  <project timestamp="1553762015">
     <package name="App\Console">
       <file name="/home/rupack/Work/Storm/tabel-laravel/app/Console/Kernel.php">
         <class name="App\Console\Kernel" namespace="App\Console">
@@ -92,26 +92,15 @@
         </class>
         <metrics loc="13" ncloc="13" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
       </file>
-      <file name="/home/rupack/Work/Storm/tabel-laravel/app/Http/Controllers/HomeController.php">
-        <class name="App\Http\Controllers\HomeController" namespace="App\Http\Controllers">
-          <metrics complexity="2" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="0" elements="5" coveredelements="0"/>
-        </class>
-        <line num="14" type="method" name="__construct" visibility="public" complexity="1" crap="2.00" count="0"/>
-        <line num="16" type="stmt" count="0"/>
-        <line num="17" type="stmt" count="0"/>
-        <line num="24" type="method" name="index" visibility="public" complexity="1" crap="2.00" count="0"/>
-        <line num="26" type="stmt" count="0"/>
-        <metrics loc="28" ncloc="18" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="0" elements="5" coveredelements="0"/>
-      </file>
       <file name="/home/rupack/Work/Storm/tabel-laravel/app/Http/Controllers/ObjectController.php">
         <class name="App\Http\Controllers\ObjectController" namespace="App\Http\Controllers">
-          <metrics complexity="8" methods="8" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="9" coveredstatements="3" elements="17" coveredelements="5"/>
+          <metrics complexity="8" methods="8" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="9" coveredstatements="0" elements="17" coveredelements="0"/>
         </class>
-        <line num="9" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="1"/>
-        <line num="11" type="stmt" count="1"/>
-        <line num="12" type="stmt" count="1"/>
-        <line num="19" type="method" name="index" visibility="public" complexity="1" crap="1" count="1"/>
-        <line num="21" type="stmt" count="1"/>
+        <line num="9" type="method" name="__construct" visibility="public" complexity="1" crap="2.00" count="0"/>
+        <line num="11" type="stmt" count="0"/>
+        <line num="12" type="stmt" count="0"/>
+        <line num="19" type="method" name="index" visibility="public" complexity="1" crap="2.00" count="0"/>
+        <line num="21" type="stmt" count="0"/>
         <line num="29" type="method" name="create" visibility="public" complexity="1" crap="2.00" count="0"/>
         <line num="32" type="stmt" count="0"/>
         <line num="40" type="method" name="store" visibility="public" complexity="1" crap="2.00" count="0"/>
@@ -124,7 +113,7 @@
         <line num="77" type="stmt" count="0"/>
         <line num="85" type="method" name="destroy" visibility="public" complexity="1" crap="2.00" count="0"/>
         <line num="88" type="stmt" count="0"/>
-        <metrics loc="89" ncloc="36" classes="1" methods="8" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="9" coveredstatements="3" elements="17" coveredelements="5"/>
+        <metrics loc="89" ncloc="36" classes="1" methods="8" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="9" coveredstatements="0" elements="17" coveredelements="0"/>
       </file>
     </package>
     <package name="App\Http">
@@ -185,6 +174,14 @@
           <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
         </class>
         <metrics loc="24" ncloc="12" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </file>
+    </package>
+    <package name="App\Models">
+      <file name="/home/rupack/Work/Storm/tabel-laravel/app/Models/Objects.php">
+        <class name="App\Models\Objects" namespace="App\Models">
+          <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+        </class>
+        <metrics loc="10" ncloc="8" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
       </file>
     </package>
     <package name="App\Providers">
@@ -251,27 +248,43 @@
         <line num="72" type="stmt" count="1"/>
         <metrics loc="73" ncloc="38" classes="1" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="14" coveredstatements="14" elements="18" coveredelements="18"/>
       </file>
+      <file name="/home/rupack/Work/Storm/tabel-laravel/app/Providers/TelescopeServiceProvider.php">
+        <class name="App\Providers\TelescopeServiceProvider" namespace="App\Providers">
+          <metrics complexity="8" methods="3" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="19" coveredstatements="10" elements="22" coveredelements="10"/>
+        </class>
+        <line num="17" type="method" name="register" visibility="public" complexity="5" crap="12.41" count="1"/>
+        <line num="21" type="stmt" count="1"/>
+        <line num="24" type="stmt" count="0"/>
+        <line num="25" type="stmt" count="0"/>
+        <line num="28" type="stmt" count="0"/>
+        <line num="29" type="stmt" count="0"/>
+        <line num="30" type="stmt" count="0"/>
+        <line num="31" type="stmt" count="0"/>
+        <line num="32" type="stmt" count="1"/>
+        <line num="33" type="stmt" count="1"/>
+        <line num="40" type="method" name="hideSensitiveRequestDetails" visibility="protected" complexity="2" crap="2.02" count="1"/>
+        <line num="42" type="stmt" count="1"/>
+        <line num="43" type="stmt" count="0"/>
+        <line num="46" type="stmt" count="1"/>
+        <line num="48" type="stmt" count="1"/>
+        <line num="49" type="stmt" count="1"/>
+        <line num="53" type="stmt" count="1"/>
+        <line num="62" type="method" name="gate" visibility="protected" complexity="1" crap="1.12" count="1"/>
+        <line num="65" type="stmt" count="0"/>
+        <line num="67" type="stmt" count="0"/>
+        <line num="68" type="stmt" count="1"/>
+        <line num="69" type="stmt" count="1"/>
+        <metrics loc="70" ncloc="49" classes="1" methods="3" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="19" coveredstatements="10" elements="22" coveredelements="10"/>
+      </file>
     </package>
     <package name="App">
       <file name="/home/rupack/Work/Storm/tabel-laravel/app/User.php">
         <class name="App\User" namespace="App">
-          <metrics complexity="2" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="0" elements="4" coveredelements="0"/>
-        </class>
-        <line num="31" type="method" name="tasks" visibility="public" complexity="1" crap="2.00" count="0"/>
-        <line num="33" type="stmt" count="0"/>
-        <line num="36" type="method" name="scopeExcept" visibility="public" complexity="1" crap="2.00" count="0"/>
-        <line num="38" type="stmt" count="0"/>
-        <metrics loc="40" ncloc="30" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="0" elements="4" coveredelements="0"/>
-      </file>
-    </package>
-    <package name="App\models">
-      <file name="/home/rupack/Work/Storm/tabel-laravel/app/models/Objects.php">
-        <class name="App\models\Objects" namespace="App\models">
           <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
         </class>
-        <metrics loc="10" ncloc="8" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+        <metrics loc="31" ncloc="21" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
       </file>
     </package>
-    <metrics files="25" loc="910" ncloc="520" classes="17" methods="34" coveredmethods="12" conditionals="0" coveredconditionals="0" statements="69" coveredstatements="28" elements="103" coveredelements="40"/>
+    <metrics files="25" loc="943" ncloc="542" classes="16" methods="33" coveredmethods="10" conditionals="0" coveredconditionals="0" statements="83" coveredstatements="35" elements="116" coveredelements="45"/>
   </project>
 </coverage>
