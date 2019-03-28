@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Objects;
 use Illuminate\Http\Request;
 
 class ObjectController extends Controller
@@ -18,7 +19,8 @@ class ObjectController extends Controller
      */
     public function index()
     {
-        return view('objects');
+        $items = Objects::all();
+        return view('objects', compact('items'));
     }
 
     /**

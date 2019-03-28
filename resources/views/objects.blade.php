@@ -14,7 +14,9 @@
                         </div>
                     @endif
 
-                    1
+                    @foreach ($items as $item)
+                        {{ $item->name }}
+                    @endforeach
                 </div>
             </div>
         </div>

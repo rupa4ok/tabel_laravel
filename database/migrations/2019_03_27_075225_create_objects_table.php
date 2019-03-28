@@ -1,11 +1,10 @@
 <?php
 
-use Illuminate\Support\Facades\Schema;
-use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
 
-class CreateObjectsTable extends Migration
-{
+class CreateObjectsTable extends Migration {
+    
     /**
      * Run the migrations.
      *
@@ -13,12 +12,18 @@ class CreateObjectsTable extends Migration
      */
     public function up()
     {
-        Schema::create('objects', function (Blueprint $table) {
+        Schema::create('objects', function(Blueprint $table)
+        {
             $table->increments('id');
-            $table->timestamps();
+            $table->string('name', 191)->nullable();
+            $table->integer('year')->nullable();
+            $table->string('mounth', 11)->nullable();
+            $table->string('status');
+            $table->integer('users_id')->unsigned()->nullable();
         });
     }
-
+    
+    
     /**
      * Reverse the migrations.
      *
@@ -26,6 +31,7 @@ class CreateObjectsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('objects');
+        Schema::drop('object');
     }
+    
 }
