@@ -3,7 +3,7 @@
 @section('content')
     <div class="container-login100" style="background-image: url('images/bg-01.jpg');">
         <div class="wrap-login100">
-            <form class="login100-form validate-form" method="POST" action="{{ route('login') }}">
+            <form class="login100-form validate-form" method="POST" action="{{ route('index') }}">
                 @csrf
                 
 					<span class="login100-form-logo">
