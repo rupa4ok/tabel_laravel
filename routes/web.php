@@ -9,8 +9,6 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/', function () {
-    return view('index');
-});
+Route::get('/', 'IndexController@index')->name('index');
 Auth::routes();
 Route::get('/objects', 'ObjectController@index')->name('objects');
