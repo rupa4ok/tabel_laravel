@@ -10,9 +10,31 @@
 |
 */
 Route::any('/', 'IndexController@index')->name('index');
-Auth::routes();
-Route::get('/objects', 'ObjectController@index')->name('objects');
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::group(
+    [
+        'prefix' => 'admin',
+        'as' => 'admin.',
+        'namespace' => 'Dashboard',
+        'middleware' => ['auth'],
+    ],
+    function () {
+        Route::resource('/', 'ObjectsController');
+        Route::resource('/work', 'WorkController');
+    }
+);
+
+Route::group(
+    [
+        'prefix' => 'user',
+        'as' => 'user.',
+        'namespace' => 'Dashboard',
+        'middleware' => ['auth'],
+    ],
+    function () {
+        Route::resource('/', 'ObjectsController');
+        Route::resource('/work', 'WorkController');
+    }
+);
